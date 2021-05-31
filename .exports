@@ -1,0 +1,8 @@
+# set PATH so it includes user's private bin if it exists
+if [ -d "/workspace/lineageOS/bin" ] ; then
+    PATH="/workspace/lineageOS/bin:$PATH"
+fi
+
+if [ -d "/workspace/lineageOS/platform-tools" ] ; then
+    PATH="/workspace/lineageOS/platform-tools:$PATH"
+fi
